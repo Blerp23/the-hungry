@@ -1,0 +1,63 @@
+type: UnitFactory
+name: "Hungry Factory Tier 3"
+health: 1000
+size: 5
+description: woah thats quite hungry
+destructible: true
+rotate: true
+breakable: true
+rebuildible: true
+configurable: true
+requirements: [
+ copper/500
+ lead/400
+ silicon/300
+ graphite/250
+ titanium/200
+]
+plans: [
+  {
+    unit: muncher
+    requirements: [
+      silicon/2
+    ]
+    time: 18
+  },
+  {
+    unit: ripper
+    requirements: [
+      silicon/2
+    ]
+    time: 13
+  },
+  {
+    unit: eater
+    requirements: [
+      silicon/8
+    ]
+    time: 40
+  },
+  {
+    unit: tearer
+    requirements: [
+      silicon/7
+    ]
+    time: 35
+  },
+  {
+    unit: subsumer
+    requirements: [
+      silicon/25
+    ]
+    time: 100
+  },
+  {
+    unit: rend
+    requirements: [
+      silicon/22
+    ]
+    time: 85
+  }
+]
+research: hungry-factory-2,
+category: units

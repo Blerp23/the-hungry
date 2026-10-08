@@ -1,0 +1,103 @@
+name: "Chasm"
+health: 1100
+speed: 0.7
+accel: 0.1
+type: flying
+BaseUnit: FlyingUnit
+height: 1
+flying: true
+engineOffset: 5
+drag: 0.01
+omniMovement: true
+rotateSpeed: 2
+hitSize: 20
+weapons: [
+ {
+  name:launcher1
+  reload: 80
+  shootsound: tshot
+  x:8
+  y:7
+  mirror: true
+  shoot: {
+   type: ShootSpread
+   shots: 2
+   inaccuracy: 10
+   spread: 3
+  }
+  bullet: {
+   type: NormalBulletType
+   frontColor: ff4fffff
+   backColor: d431d4ff
+   damage: 40
+   speed: 1.5
+   width: 14
+   height: 16
+   lifetime: 80
+   trailChance: 0.3
+   trailColor: b50ee8ff
+   chargeEffect: {
+    type: ParticleEffect
+    lifetime: 0
+   }
+   shootEffect: {
+    type: ParticleEffect
+    cone: 0
+    length: 30
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 20
+    layer: 115
+   }
+   despawnEffect: {
+    type: ParticleEffect
+    cone: 5
+    length: 25
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 40
+    layer: 115
+   }
+   hitEffect: {
+    type: ParticleEffect
+    cone: 5
+    length: 30
+    sizeFrom: 5
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 45
+    layer: 115
+   }
+  }
+ }
+]
+abilities: [
+    {
+        type: UnitSpawnAbility
+        unit: muncher
+        spawnTime: 600
+        spawnX: 3.5
+        spawnY: 2.5
+    },
+    {
+        type: UnitSpawnAbility
+        unit: muncher
+        spawnTime: 600
+        spawnX: -3.5
+        spawnY: 2.5
+    },
+    {
+        type: UnitSpawnAbility
+        unit: muncher
+        spawnTime: 600
+        spawnX: -3.5
+        spawnY: -3.5
+    },
+    {
+        type: UnitSpawnAbility
+        unit: muncher
+        spawnTime: 600
+        spawnX: 3.5
+        spawnY: -3.5
+    }
+]

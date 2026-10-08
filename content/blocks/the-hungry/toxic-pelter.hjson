@@ -1,0 +1,59 @@
+type: ItemTurret
+size: 2
+name: "Toxic Pelter"
+health: 900
+requirements: [
+ copper/90
+ silicon/45
+ graphite/30
+]
+range: 150
+reload: 15
+inaccuracy: 3
+ammoTypes: {
+    spore-pod: {
+        ammoMultiplier: 6
+        type: BasicBulletType
+        frontColor: ff4fffff
+        backColor: d431d4ff
+        damage: 21
+        speed: 5
+        width: 4
+        height: 11
+        lifetime: 30
+        chargeEffect: {
+            type: ParticleEffect
+            lifetime: 0
+        }
+        shootEffect: {
+            type: ParticleEffect
+            cone: 15
+            length: 30
+            colorFrom: b50ee8ff
+            colorTo: b50ee800
+            lifetime: 40
+            layer: 115
+        }
+        despawnEffect: {
+            type: ParticleEffect
+            cone: 5
+            length: 25
+            colorFrom: b50ee8ff
+            colorTo: b50ee800
+            lifetime: 40
+            layer: 115
+        }
+        hitEffect: {
+            type: ParticleEffect
+            cone: 5
+            length: 30
+            sizeFrom: 5
+            colorFrom: b50ee8ff
+            colorTo: b50ee800
+            lifetime: 45
+            layer: 115
+        }
+    }
+}
+category: turret
+research: hungry-core-shard

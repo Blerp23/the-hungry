@@ -1,0 +1,14 @@
+type: CoreBlock
+name: "Nerve Core"
+health: 2800
+size: 4
+itemCapacity: 4000
+requirements: [
+ copper/3000
+ lead/3000
+ silicon/2000
+]
+unitType: hungry-core-2
+unitCapModifier: 120
+category: effect
+research: hungry-core-shard

@@ -1,0 +1,60 @@
+name: "Ripper"
+health: 80
+speed: 2
+accel: 0.1
+type: flying
+BaseUnit: FlyingUnit
+height: 3
+flying: true
+engineOffset: 3
+drag: 0.06
+circleTarget: true
+circleTargetRadius: 40
+omniMovement: false
+rotateSpeed: 6
+range: 80
+weapons: [
+ {
+  name:bite1
+  reload: 40
+  shootsound: tshot
+  x:0
+  y:0
+  shots: 1
+  inaccuracy: 4
+  spacing: 1
+  bullet: {
+   type: NormalBulletType
+   damage: 18
+   speed: 4
+   width: 0
+   height: 0
+   lifetime: 10
+   chargeEffect: {
+    type: ParticleEffect
+    lifetime: 0
+   }
+   shootEffect: {
+    type: ParticleEffect
+    cone: 30
+    length: 30
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 20
+    layer: 115
+   }
+   hitEffect: {
+    type: ParticleEffect
+    length: 15
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 40
+    layer: 115
+   }
+   despawnEffect: {
+    type: ParticleEffect
+    lifetime: 0
+   }
+  }
+ }
+]
