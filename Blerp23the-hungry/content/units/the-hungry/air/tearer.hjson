@@ -1,0 +1,62 @@
+name: "Tearer"
+health: 80
+speed: 1.6
+accel: 0.2
+type: flying
+BaseUnit: FlyingUnit
+height: 3
+flying: true
+engineOffset: 3
+drag: 0.06
+circleTarget: true
+circleTargetRadius: 30
+omniMovement: false
+rotateSpeed: 6
+range: 80
+weapons: [
+ {
+  name:bite1
+  reload: 1
+  shootsound: tshot
+  x:0
+  y:0
+  shots: 1
+  inaccuracy: 0
+  spacing: 1
+  bullet: {
+   type: NormalBulletType
+   damage: 4
+   pierceArmor: true
+   speed: 4
+   width: 0
+   height: 0
+   lifetime: 1
+   chargeEffect: {
+    type: ParticleEffect
+    lifetime: 0
+   }
+   shootEffect: {
+    type: ParticleEffect
+    cone: 0
+    length: 30
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 20
+    layer: 115
+   }
+   hitEffect: {
+    type: ParticleEffect
+    cone: 5
+    length: 25
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 40
+    layer: 115
+   }
+   despawnEffect: {
+    type: ParticleEffect
+    lifetime: 0
+   }
+  }
+ }
+]

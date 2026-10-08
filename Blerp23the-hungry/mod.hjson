@@ -1,0 +1,9 @@
+{
+  name: "the-hungry",
+  displayName: "The Hungry",
+  author: "Blerp23",
+  description: "yummers",
+  version: 1.5f,
+  minGameVersion: 136
+  hidden: "false"
+}
