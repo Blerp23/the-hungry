@@ -5,6 +5,8 @@ speed: 0.75
 type: mech
 BaseUnit: GroundUnit
 range: 80
+circleTarget: true
+circleTargetRadius: 20
 weapons: [
  {
   name:munch2

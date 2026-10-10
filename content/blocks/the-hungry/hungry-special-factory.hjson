@@ -1,0 +1,28 @@
+type: UnitFactory
+name: "Hungry Special Factory"
+health: 1200
+size: 5
+description: Constructs specialized "captain" units with abilities that enhance swarms around them
+destructible: true
+rotate: true
+breakable: true
+rebuildible: true
+configurable: true
+requirements: [
+ copper/600
+ lead/500
+ silicon/350
+ graphite/350
+ titanium/400
+]
+plans: [
+  {
+    unit: shell
+    requirements: [
+      silicon/200
+    ]
+    time: 300
+  }
+]
+research: hungry-factory-3,
+category: units
