@@ -19,9 +19,16 @@ plans: [
   {
     unit: shell
     requirements: [
-      silicon/200
+      silicon/300
     ]
-    time: 300
+    time: 1300
+  },
+  {
+    unit: bastion
+    requirements: [
+      silicon/400
+    ]
+    time: 1600
   }
 ]
 research: hungry-factory-3,

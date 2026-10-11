@@ -1,0 +1,71 @@
+name: "Bastion"
+health: 1400
+armor: 9
+speed: 0.5
+type: legs
+BaseUnit: GroundUnit
+hitSize: 20
+range: 80
+legCount: 6
+legLength: 18
+weapons: [
+ {
+  name:munch3
+  reload: 70
+  shootsound: tshot
+  x:7
+  y:-4
+  mirror: true
+  shots: 1
+  inaccuracy: 5
+  bullet: {
+   type: NormalBulletType
+   frontColor: ff4fffff
+   backColor: d431d4ff
+   damage: 30
+   splashDamage: 90
+   splashDamageRadius: 32
+   speed: 5
+   width: 12
+   height: 16
+   lifetime: 40
+   chargeEffect: {
+    type: ParticleEffect
+    lifetime: 0
+   }
+   shootEffect: {
+    type: ParticleEffect
+    particles: 20
+    cone: 10
+    length: 215
+    sizeFrom: 3
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    lifetime: 40
+   }
+   hitEffect: {
+    type: ParticleEffect
+    length: 100
+    colorFrom: b50ee8ff
+    colorTo: b50ee800
+    sizeFrom: 10
+    sizeTo: 6
+    lifetime: 150
+   }
+   despawnEffect: {
+    type: ParticleEffect
+    lifetime: 0
+   }
+  }
+ }
+],
+abilities: [
+    {
+        type: ForceFieldAbility,
+        radius: 120,
+        regen: 0.25,
+        max: 1300,
+        cooldown: 90,
+        sides: 7
+    }
+]
