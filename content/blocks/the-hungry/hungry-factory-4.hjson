@@ -62,7 +62,7 @@ plans: [
   {
     unit: devourer
     requirements: [
-      silicon/150
+      silicon/200
     ]
     time: 200
   },
